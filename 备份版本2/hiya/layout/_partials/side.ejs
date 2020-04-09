@@ -1,0 +1,97 @@
+<%
+<!--用来存储一级分类名-->
+var arr=[];
+<!--用来存储二级分类名-->
+var arr2=[];
+<!--用来存储去重后的一级分类名-->
+var arred=[];
+<!--用来存储去重后的二级分类名-->
+var arr2ed=[];
+<!--去重-->
+function unique(arr){
+    return Array.from(new Set(arr));
+}
+<!--判断是否有重复的函数-->
+function usedornot(y,arrs){
+    var a=0;
+    for(var u=0;u<arrs.length;u++){
+        if(y === arrs[u]) {
+            a=a+1;
+            return false;
+        }
+    }
+    if(a===0) {
+        return true;
+    }
+};
+
+%>
+
+<div class="sidebody">
+    <!-- <div id="menu-outer">
+        <div class="meinfo">
+            <img id="avator-img" src="<%- url_for(theme.me.avator) %>">
+            <div id="author"><%=theme.me.autor%></div>
+            <div id="subtitle"><%=theme.me.subtitile%></div>
+        </div>
+
+        <div id="menu-inner">
+            <% Object.keys(theme.menu).forEach(key => { %>
+                <span class="menu-name">
+                    <a href="<%=theme.menu[key]%>"><%=key%></a>
+                </span>
+            
+            <% }); %>
+        </div>
+    </div> -->
+    <div id="book">
+        <!--判断是否有分类-->
+        <% if(site.categories.length){ %>
+        <% site.posts.sort('categories').each(posts => {%>
+        <!--所以有两级分类的就只循环一次-->
+        <!--判断是否有两级的分类-->
+        <%if(posts.categories.data.length==2){%>
+        <% if(usedornot(posts.categories.data[0].name,arr)==true){%>
+        <!--筛选出一级分类-->
+        <div class="first-cate"><%=posts.categories.data[0].name%></div>
+        <!--筛选出此二级分类里的所有文章-->
+        <% site.posts.sort('date', -1).each(posty => { %>
+        <%if(posty.categories.data.length==2){%>
+        <%if(posty.categories.data[0].name===posts.categories.data[0].name){%>
+        <%if(usedornot(posty.categories.data[1].name,arr2)===true){%>
+        <div class="second-cate"> 
+            <%=posty.categories.data[1].name%>
+        </div>
+
+        <!--筛选出此二级分类里的所有文章-->
+        <% site.posts.sort('date', -1).each(postys => { %>
+        <%if(postys.categories.data.length==2){%>
+        <%if(postys.categories.data[1].name===posty.categories.data[1].name){%>
+        <div class="cate-post-title">
+            <a href="<%=url_for(postys.path)%>"><%=postys.title%></a>
+        </div>
+
+        <%}%>
+            <%}%>
+        <% }); %>
+
+        <%};%>
+        <% arr2.push(posty.categories.data[1].name);%>
+        <%}%>
+         <%}%>
+        <% }); %>
+
+
+
+        <%};%>
+        <% arr.push(posts.categories.data[0].name);%>
+        <%};%>
+        <% }); %>
+        <%}%>
+        
+     
+
+ 
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+
+# main menu navigation
+menu:
+  主页: /
+  归档: /archives
+  关于: /about
+
+# 头像以及图标的路径
+me: 
+  autor: 任我行
+  subtitile: 加油😸
+  avator: img/avator.jpg
+  icon: img/icon.png
+
+# 友情连接
+link:
+  github: https://github.com/FuShaoLei
+  email: 1563250958@qq.com
+
