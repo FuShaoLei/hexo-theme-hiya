@@ -1,0 +1,32 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <%- partial('post/gallery') %>
+      <% if (post.link || post.title){ %>
+        <header class="article-header">
+          <%- partial('post/title', {class_name: 'article-title'}) %>
+          <div class="article-meta">
+            <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+            <%- partial('post/category') %>
+            <%- partial('post/tag') %>
+          </div>
+        </header>
+      <% } %>
+      <div class="article-entry" itemprop="articleBody">
+          <%- strip_html(post.content).substr(0, 100) %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+      </div>
+    </div>
+    <% if (!index){ %>
+      <%- partial('post/nav') %>
+    <% } %>
+  </article>
+  
+  <% if (!index && post.comments && config.disqus_shortname){ %>
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+  <% } %>
