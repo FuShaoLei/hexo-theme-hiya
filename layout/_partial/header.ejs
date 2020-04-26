@@ -1,3 +1,6 @@
+<%
+var a="{}字"
+%>
 <header id="header">
   <div id="banner"></div>
   <div id="header-outer" class="outer">
@@ -8,15 +11,40 @@
       <h1 id="logo-wrap">
       
 
-            <a href="<%- url_for() %>" id="logo">
+          
               <% if(true===is_home()){%>
+                <a href="<%- url_for() %>" id="logo">
                 <%= theme.site_name %>
-                
+              </a>
 
               <% }else {if(true===is_post()){%>
-              <%= page.title %>
+                <a href="<%- url_for(page.path) %>" id="logo">
+               <%= page.title %>
+               </a>
+               <div class="post-index-meta">
+                 <span class="post-index-meta-date">
+                   <time datetime="<%=page.date.toJSON()%>">
+                  <%=date(page.date)%>
+                </time>
+                 </span>
+                 
+                
+                <% if (page.categories && page.categories.length){ %>
+                  <span  class="post-index-meta-cate">
+                    <%- list_categories(page.categories, {
+                      show_count: false,
+                      class: 'article-post-category',
+                      style: 'none',
+                      separator: '►'
+                    }) %>
+                  </span>
+                <% } %>
+                
+                 
+               </div>
+               
               <% }} %>
-            </a>
+            
         
 
       </h1>
