@@ -8,6 +8,16 @@
 
 ![](source/img/demo.png)
 
+## 🍔安装
+```
+git clone https://github.com/FuShaoLei/hexo-theme-hiya.git themes/hiya
+```
+然后修改你根目录的`_config.yml`👇
+```
+theme: hiya
+```
+就大功告成了😘
+
 ## 🍟live demo
 
 - [任我行的小站](https://fushaolei.github.io/)
@@ -40,3 +50,6 @@ rss(同上。。) | ❌
 
 1. 🍖首页展示的文章可自动截断
 2. 🍖美化了widget的样式
+
+### 2020/4/27
+1. 🍖美化了文章标题的样式
