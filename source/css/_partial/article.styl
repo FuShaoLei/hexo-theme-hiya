@@ -367,3 +367,40 @@ $article-gallery-ctrl
   &:before
     content: "\f054"
     right: 15px*/
+  
+.fold-button
+  cursor: pointer
+  border:none
+  outline: none
+  font-size: 1.1em
+  width: 100%
+  text-align: left
+  background-color: color-theme
+  color: #fff
+  padding: 8px
+  margin: 4px 0
+  border-radius: 4px
+  transition: 0.3s
+  &:hover
+    background-color: color-theme-highlight
+  &.active
+    background-color: color-theme
+    color: #fff
+    border-radius: 4px 4px 0 0
+
+.fold-content
+   background-color: color-theme-second
+   color: #000
+   border-radius: 0 0 4px 4px
+   overflow: hidden
+   opacity: 0
+   max-height: 0
+   transition: 0.3s
+   padding:0 8px
+   margin:0
+   &.show
+    opacity: 1;
+    max-height: 500px;
+    padding:8px;
+    margin:2px 0 4px;
+

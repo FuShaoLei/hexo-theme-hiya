@@ -135,3 +135,11 @@
     $container.removeClass('mobile-nav-on');
   });
 })(jQuery);
+
+var accordions=document.querySelectorAll('button.fold-button');
+for(var i=0;i<accordions.length;i++){
+    accordions[i].onclick=function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
