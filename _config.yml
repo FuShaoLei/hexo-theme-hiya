@@ -2,20 +2,18 @@
 menu:
   Home: /
   Archives: /archives
-rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: true
 
 # Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
+# sidebar: right
+# widgets:
+# - category
+# - tag
+# - tagcloud
+# - archive
+# - recent_posts
 
 # 自定义颜色
 color:
@@ -31,6 +29,13 @@ color:
   widget_bg_color: "#ffff" #widget的背景颜色
   code_bg_color: #小代码块的背景颜色
   code_text_color: #小代码块的文字颜色
+
+
+neu:
+  bg: "#671B1D" #背景颜色
+  bg_dark: "#571719" #较暗的背景颜色
+  bg_light: "#751f21" #较亮的背景颜色
+
 
 # 网站个性化
 icon_img: img/icon03.png #标签页图标
