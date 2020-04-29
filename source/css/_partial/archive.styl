@@ -8,40 +8,46 @@
   margin-bottom: 1em
 
 .archive-year
-  @extend $block-caption
+  color: color-neu-normal-text
+  text-decoration: none
+  font-size: 2em
+  font-weight: 500
+  margin-left: 30px
+  border-radius: 8px
+  padding: 5px 10px
+  box-shadow: inset 5px 5px 10px color-neu-bg-dark, 
+            inset -5px -5px 10px color-neu-bg-light
 
-.archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
+.archive-article-div
+  margin-left: 20px
 
 .archive-article
   avoid-column-break()
 
 .archive-article-inner
-  @extend $block
   padding: 10px
   margin-bottom: 15px
 
 .archive-article-title
   text-decoration: none
   font-weight: bold
-  color: color-default
+  margin-left: 10px
+  color: color-neu-normal-text
   transition: color 0.2s
   line-height: line-height
   &:hover
-    color: color-link
+    color: color-neu-highlight
 
 .archive-article-footer
   margin-top: 1em
 
 .archive-article-date
-  color: color-grey
+  color: color-neu-highlight
+  float: left
   text-decoration: none
-  font-size: 0.85em
-  line-height: 1em
+  font-size: 1em
+  line-height: line-height
+  text-align: center
   margin-bottom: 0.5em
   display: block
 
