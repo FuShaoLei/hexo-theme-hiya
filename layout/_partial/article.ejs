@@ -4,6 +4,11 @@
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        <div class="article-meta">
+          <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+          <%- partial('post/category') %>
+          <%- partial('post/tag') %>
+        </div>
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
@@ -18,13 +23,6 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="article-footer">
-      
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
-      <%- partial('post/tag') %>
-    </footer>
   </div>
  
 </article>
