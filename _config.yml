@@ -17,24 +17,21 @@ excerpt_link: Read More
 
 # 自定义颜色
 color:
-  theme_color: "#00BDAA" #主题颜色，将应用大都数位置
+  theme_color: "#00BDAA" #主题颜色
   theme_second_color: "#F1E7B6" #辅助颜色
   theme_highlight_color: "#FE346E" #高亮颜色
-  nav_color: "#fff" #顶部导航栏的颜色
-  bg_color: "#EEEEEE" #背景颜色
+  theme_normal_text: "#fff" #普通文字将会用到这种颜色
   foot_color: "#00BDAA" #底部背景颜色
-  foot_text_color: "#fff" #底部文字颜色
-  a_color: #超链接的颜色
-  a_hover_color: #当鼠标移动到超链接时的样式
-  widget_bg_color: "#ffff" #widget的背景颜色
   code_bg_color: #小代码块的背景颜色
   code_text_color: #小代码块的文字颜色
 
-
+# 拟态相关
 neu:
-  bg: "#671B1D" #背景颜色
-  bg_dark: "#571719" #较暗的背景颜色
-  bg_light: "#751f21" #较亮的背景颜色
+  bg: "#3E69AD" #背景颜色
+  bg_dark: "#355993" #较暗的背景颜色
+  bg_light: "#4779c7" #较亮的背景颜色
+  normal_text: "#F0F2E5" #普通文字的颜色
+  highlight: "#F26339" #高亮
 
 
 # 网站个性化

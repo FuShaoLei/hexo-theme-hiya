@@ -57,13 +57,14 @@
   overflow: hidden
   a, span
     padding: 10px 20px
+    transition: 0.3s
     line-height: 1
     height: 2ex
   a
-    color: color-grey
+    color: color-neu-normal-text
     text-decoration: none
     &:hover
-      background: color-theme
+      background: color-neu-highlight
       color: #fff
   .prev
     float: left
@@ -74,7 +75,7 @@
     @media mq-mobile
       display: none
   .current
-    color: color-default
+    color: color-neu-highlight
     font-weight: bold
   .space
     color: color-border

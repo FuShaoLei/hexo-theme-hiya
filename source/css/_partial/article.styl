@@ -1,3 +1,4 @@
+
 .article
   margin: block-margin 0
 
@@ -9,7 +10,7 @@
   clearfix()
 
 .article-date
-  color: #333
+  color: color-neu-normal-text
   text-decoration: none
   margin: 10px 0px
   font-size: 0.8em
@@ -25,7 +26,7 @@
     content: "\📂 "
 
 .article-category-link
-  color: #333
+  color: color-neu-normal-text
   text-decoration: none
 
 .article-header
@@ -35,32 +36,32 @@
   text-decoration: none
   font-size: 2em
   font-weight: bold
-  color: #F0D463
+  color: color-neu-normal-text
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
-    color: color-theme
+    color: color-neu-highlight
 
 .article-entry
   @extend $base-style
   clearfix()
-  color: #F0D463
+  color: color-neu-normal-text
   padding: 0 article-padding
   p, table
     line-height: line-height
     margin: line-height 0
   h1, h2, h3, h4, h5, h6
     font-weight: bold
-    color: #F0D463
+    color: color-neu-normal-text
   h1
     &::before
       content: '\# '
-      color: color-theme
+      color: color-neu-highlight
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
     margin: line-height-title 0
   a
-    color: color-link
+    color: color-neu-highlight
     text-decoration: none
     &:hover
       text-decoration: underline
@@ -80,16 +81,16 @@
     border-spacing: 0
   th
     font-weight: bold
-    border-bottom: 3px solid color-grey
+    border-bottom: 3px solid color-neu-highlight
     padding-bottom: 0.5em
   td
-    border-bottom: 1px solid color-grey
+    border-bottom: 1px solid color-neu-highlight
     padding: 10px 10px
   blockquote
     font-size: 1em
-    border-left: 5px solid color-theme
+    border-left: 5px solid color-neu-highlight
     padding: 0.01em 1em
-    background: color-theme-second
+    background: color-neu-bg-light
     footer
       font-size: font-size
       margin: line-height 0
@@ -137,15 +138,16 @@
   line-height: 1em
   text-transform: uppercase
   padding: 6px 13px
-  color: color-grey
+  transition: 0.2s
+  color: color-neu-normal-text
   text-decoration: none
   border-radius: 4px
-  background: #efeeee
-  box-shadow: inset 2px 2px 4px #d0cfcf, 
-            inset -2px -2px 4px #ffffff;
+  background: color-neu-bg
+  box-shadow: inset 2px 2px 4px color-neu-bg-dark, 
+            inset -2px -2px 4px color-neu-bg
   &:hover
     text-decoration: none
-    color: color-theme
+    color: color-neu-highlight
 
 
 .article-footer
@@ -154,12 +156,13 @@
   line-height: line-height
   border-top: 1px solid color-border
   padding-top: line-height
+
   margin: 0 article-padding article-padding
   a
-    color: color-grey
+    color: color-neu-normal-text
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-neu-highlight
 
 .article-tag-list-item
   float: left
@@ -168,7 +171,7 @@
 
 .article-tag-list-link
   text-decoration: none
-  color: #333
+  color: color-neu-normal-text
   &:before
     content: "\🔖 "
 
@@ -197,14 +200,14 @@
 
 .article-nav-link-wrap
   text-decoration: none
-  color: color-grey
+  color: color-neu-normal-text
   box-sizing: border-box
   margin-top: block-margin
   text-align: center
   display: block
   transition: 0.3s
   &:hover
-    color: color-theme
+    color: color-neu-highlight
   @media mq-normal
     width: 50%
     margin-top: 0
@@ -373,21 +376,21 @@ $article-gallery-ctrl
   font-size: 1.1em
   width: 100%
   text-align: left
-  background-color: color-theme
+  background-color: color-neu-highlight
   color: #fff
   padding: 8px
   margin: 4px 0
   border-radius: 4px
   transition: 0.3s
   &:hover
-    background-color: color-theme-highlight
+    background-color: color-neu-bg-dark
   &.active
-    background-color: color-theme
+    background-color: color-neu-highlight
     color: #fff
     border-radius: 4px 4px 0 0
 
 .fold-content
-   background-color: color-theme-second
+   background-color: color-neu-bg-light
    color: #000
    border-radius: 0 0 4px 4px
    overflow: hidden
