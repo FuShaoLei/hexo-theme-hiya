@@ -4,14 +4,15 @@
 
 ![](source/img/example.png)
 
+## 🍚Demo
+- 国内访问：[任我行的小站gitee](https://fushaolei.gitee.io/)
+- 国外访问：[任我行的小站github](https://fushaolei.github.io/)
+
 ## 🎨支持自定义颜色
 ![](source/img/more_color.png)
 
 更多请戳这里👉[博客自定义主题颜色(持续更新中~)](https://fushaolei.github.io/2020/04/30/%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2/)
 
-## 🍟live demo
-
-- [任我行的小站](https://fushaolei.github.io/)
 
 ## 🍔安装
 ```
