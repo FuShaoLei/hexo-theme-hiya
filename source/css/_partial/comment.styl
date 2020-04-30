@@ -1,9 +1,21 @@
 #comments
-  background: #fff
-  box-shadow: 1px 2px 3px #ddd
+  @extend $block
+  border-radius: 15px
   padding: article-padding
-  border: 1px solid color-border
-  border-radius: 3px
   margin: block-margin 0
+  input
+    color: color-neu-normal-text
+    &::placeholder
+      color: color-neu-highlight
   a
-    color: color-link
+    color: color-neu-normal-text
+  textarea
+    color: color-neu-normal-text
+    &::placeholder
+      color: color-neu-highlight
+  .vbtn,.vempty
+    color: color-neu-highlight
+
+
+  
+
