@@ -24,14 +24,11 @@ color:
   foot_color: "#00BDAA" #底部背景颜色
   code_bg_color: #小代码块的背景颜色
   code_text_color: #小代码块的文字颜色
-
-# 拟态相关
-neu:
-  bg: "#3E69AD" #背景颜色
-  bg_dark: "#355993" #较暗的背景颜色
-  bg_light: "#4779c7" #较亮的背景颜色
-  normal_text: "#F0F2E5" #普通文字的颜色
-  highlight: "#F26339" #高亮
+  bg: "#3E69AD"
+  bg_dark: "#355993"
+  bg_light: "#4779c7"
+  normal_text: "#F0F2E5"
+  highlight: "#F26339"
 
 
 # 网站个性化

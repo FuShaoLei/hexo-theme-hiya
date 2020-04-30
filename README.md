@@ -1,12 +1,16 @@
 <p align="center">
 <br>
-<img height="60" src="source/img/icon02.svg">
+<sapn style="font-size: 2em">Hiya</sapn>
 <br>
-<br> 一款非常简单的，基于原始主题landscape魔改的，Hexo主题
+<br> 一款极简的，拟态风格的，基于landscape改造的Hexo主题
 
 </p>
 
-![](source/img/demo.png)
+![](source/img/example.png)
+
+## 🍟live demo
+
+- [任我行的小站](https://fushaolei.github.io/)
 
 ## 🍔安装
 ```
@@ -18,9 +22,6 @@ theme: hiya
 ```
 就大功告成了😘
 
-## 🍟live demo
-
-- [任我行的小站](https://fushaolei.github.io/)
 
 ## 📌TODO
 TODO  | 完成情况
