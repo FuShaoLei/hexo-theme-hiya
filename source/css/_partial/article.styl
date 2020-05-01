@@ -110,7 +110,7 @@
       margin-right: 0.5em
       margin-left: 1em
   .caption
-    color: color-grey
+    color: color-neu-normal-text
     display: block
     font-size: 0.9em
     margin-top: 0.5em
@@ -174,199 +174,6 @@
   &:before
     content: "\🔖 "
 
-.article-comment-link
-  float: right
-  &:before
-    content: "\f075"
-    font-family: font-icon
-    padding-right: 8px
-
-.article-share-link
-  cursor: pointer
-  float: right
-  margin-left: 20px
-  &:before
-    content: "\f064"
-    font-family: font-icon
-    padding-right: 6px
-
-#article-nav
-  clearfix()
-  position: relative
-  @media mq-normal
-    margin: block-margin 0
-   
-
-.article-nav-link-wrap
-  text-decoration: none
-  color: color-neu-normal-text
-  box-sizing: border-box
-  margin-top: block-margin
-  text-align: center
-  display: block
-  transition: 0.3s
-  &:hover
-    color: color-neu-highlight
-  @media mq-normal
-    width: 50%
-    margin-top: 0
-
-#article-nav-newer
-  @media mq-normal
-    float: left
-    text-align: left
-    padding-right: 20px
-
-#article-nav-older
-  @media mq-normal
-    float: right
-    text-align: right
-    padding-left: 20px
-
-.article-nav-caption
-  text-transform: uppercase
-  letter-spacing: 2px
-  color: color-border
-  line-height: 1em
-  font-weight: bold
-  #article-nav-newer &
-    margin-right: -2px
-
-.article-nav-title
-  font-size: 0.85em
-  line-height: line-height
-  margin-top: 0.5em
-
-.article-share-box
-  position: absolute
-  display: none
-  background: #fff
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2)
-  border-radius: 3px
-  margin-left: -145px
-  overflow: hidden
-  z-index: 1
-  &.on
-    display: block
-
-.article-share-input
-  width: 100%
-  background: none
-  box-sizing: border-box
-  font: 14px font-sans
-  padding: 0 15px
-  color: color-default
-  outline: none
-  border: 1px solid color-border
-  border-radius: 3px 3px 0 0
-  height: 36px
-  line-height: 36px
-
-.article-share-links
-  clearfix()
-  background: color-background
-
-$article-share-link
-  width: 50px
-  height: 36px
-  display: block
-  float: left
-  position: relative
-  color: #999
-  text-shadow: 0 1px #fff
-  &:before
-    font-size: 20px
-    font-family: font-icon
-    absolute-center(@font-size)
-    text-align: center
-  &:hover
-    color: #fff
-
-.article-share-twitter
-  @extend $article-share-link
-  &:before
-    content: "\f099"
-  &:hover
-    background: color-twitter
-    text-shadow: 0 1px darken(color-twitter, 20%)
-
-.article-share-facebook
-  @extend $article-share-link
-  &:before
-    content: "\f09a"
-  &:hover
-    background: color-facebook
-    text-shadow: 0 1px darken(color-facebook, 20%)
-
-.article-share-pinterest
-  @extend $article-share-link
-  &:before
-    content: "\f0d2"
-  &:hover
-    background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
-
-.article-share-google
-  @extend $article-share-link
-  &:before
-    content: "\f0d5"
-  &:hover
-    background: color-google
-    text-shadow: 0 1px darken(color-google, 20%)
-
-.article-gallery
-  background: #000
-  position: relative
-
-.article-gallery-photos
-  position: relative
-  overflow: hidden
-
-.article-gallery-img
-  display: none
-  max-width: 100%
-  &:first-child
-    display: block
-  &.loaded
-    position: absolute
-    display: block
-  img
-    display: block
-    max-width: 100%
-    margin: 0 auto
-/*
-$article-gallery-ctrl
-  position: absolute
-  top: 0
-  height: 100%
-  width: 60px
-  color: #fff
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
-  opacity: 0.3
-  transition: opacity 0.2s
-  cursor: pointer
-  &:hover
-    opacity: 0.8
-  &:before
-    font-size: 30px
-    font-family: font-icon
-    position: absolute
-    top: 50%
-    margin-top: @font-size * -0.5
-
-.article-gallery-prev
-  @extend $article-gallery-ctrl
-  left: 0
-  &:before
-    content: "\f053"
-    left: 15px
-
-.article-gallery-next
-  @extend $article-gallery-ctrl
-  right: 0
-  &:before
-    content: "\f054"
-    right: 15px*/
   
 .fold-button
   cursor: pointer
@@ -376,7 +183,7 @@ $article-gallery-ctrl
   width: 100%
   text-align: left
   background-color: color-neu-highlight
-  color: #fff
+  color: color-neu-normal-text
   padding: 8px
   margin: 4px 0
   border-radius: 4px
@@ -385,12 +192,12 @@ $article-gallery-ctrl
     background-color: color-neu-bg-dark
   &.active
     background-color: color-neu-highlight
-    color: #fff
+    color: color-neu-normal-text
     border-radius: 4px 4px 0 0
 
 .fold-content
    background-color: color-neu-bg-light
-   color: #000
+   color: color-neu-normal-text
    border-radius: 0 0 4px 4px
    overflow: hidden
    opacity: 0

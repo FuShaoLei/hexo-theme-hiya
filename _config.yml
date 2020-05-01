@@ -3,63 +3,20 @@ menu:
   Home: /
   Archives: /archives
 
-# Content
-excerpt_link: Read More
-
-# Sidebar
-# sidebar: right
-# widgets:
-# - category
-# - tag
-# - tagcloud
-# - archive
-# - recent_posts
-
 # 自定义颜色
 color:
-  theme_color: "#00BDAA" #主题颜色
-  theme_second_color: "#F1E7B6" #辅助颜色
-  theme_highlight_color: "#FE346E" #高亮颜色
-  theme_normal_text: "#fff" #普通文字将会用到这种颜色
-  foot_color: "#00BDAA" #底部背景颜色
-  code_bg_color: #小代码块的背景颜色
-  code_text_color: #小代码块的文字颜色
-  bg: "#DE2910"
-  bg_dark: "#bd230e"
-  bg_light: "#ff2f12"
+  bg: "#026A39"
+  bg_dark: "#025a30"
+  bg_light: "#027a42"
   normal_text: "#F0F2E5"
-  highlight: "#FFDE00"
-
-
-
-
+  highlight: "#F7BD08"
 
 # 网站个性化
-icon_img: img/icon03.png #标签页图标
-banner_img: ../img/bg.jpg #网站顶端图片
+icon_img: ../img/icon.png #标签页图标
 site_author: 任我行
 site_name: 任我行的小站
 
-# display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
-# - category
-# - tagcloud
-# - archive
-
-# widget behavior
-archive_type: 'monthly'
-show_count: false
-
-# Miscellaneous
-google_analytics:
-gauges_analytics:
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
-
 # Valine 评论系统
-
 valine:
   open: true # true | false 是否打开，默认false
   appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID
