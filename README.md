@@ -1,4 +1,6 @@
 <p align="center">
+ <span style="font-size:1.9em;display:block;">Hiya</span>
+ <br>
 一款极简的，拟态风格的，基于landscape改造的Hexo主题
 </p>
 
@@ -61,7 +63,7 @@ valine:
 
 ## 👋联系我
 
-如果你有什么好的意见或建议的话，欢迎你和我交流！
+如果你有什么好的意见或建议的话，欢迎你和我交流！也欢迎提issue，或者pull request
 
 - 邮箱：1563250958@qq.com
 - QQ： 1563250958
