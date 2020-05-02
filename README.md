@@ -10,11 +10,17 @@
 - 国内访问：[任我行的小站gitee](https://fushaolei.gitee.io/)
 - 国外访问：[任我行的小站github](https://fushaolei.github.io/)
 
-## 🎨支持自定义颜色
+## 💪特点
+
+### 🎨支持自定义颜色
 ![](source/img/more_color.png)
 
 更多请戳这里👉[自定义主题颜色(持续更新中)](https://github.com/FuShaoLei/hexo-theme-hiya/issues/1)
 
+### 😋Valine评论系统
+配置简单，游客可评论
+
+### 😜更多功能开发中。。
 
 ## 🍔安装
 ```
