@@ -11,7 +11,7 @@
 ## 🎨支持自定义颜色
 ![](source/img/more_color.png)
 
-更多请戳这里👉[博客自定义主题颜色(持续更新中~)](https://fushaolei.github.io/2020/04/30/%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2/)
+更多请戳这里👉[自定义主题颜色(持续更新中)](https://github.com/FuShaoLei/hexo-theme-hiya/issues/1)
 
 
 ## 🍔安装
@@ -20,59 +20,52 @@ git clone https://github.com/FuShaoLei/hexo-theme-hiya.git themes/hiya
 ```
 然后修改你根目录的`_config.yml`👇
 ```
-theme: hiya
++ theme: hiya
 ```
 就大功告成了😘
-
-## 📌TODO
-TODO  | 完成情况
--- | -- 
-回顶 | ❌
-🍰可折叠的题目块 | ✅
-可自定义颜色 | ✅
-全局搜索 | ❌
-网站seo优化（虽然现在还不懂是什么。。） | ❌
-rss(同上。。) | ❌
-评论系统（更倾向于gitalk） | ❌
-点赞系统（长远计划） | ❌
-首页展示的文章自动截断 | ✅（已废弃，这样字太丑了。。）
-可选择的代码块风格 | ❌
-可复制的代码块 | ❌
-加入不蒜子统计 | ❌
  
+## 🎏 _config.yml
 
-## 📝更新日志
-> 🍰表示加入了什么功能，🍖表示修复或美化了什么东西，（随便选的符号(￣▽￣)"
-### 2020/4/23
+```yml
+# Header
+menu:
+  Home: /
+  Archives: /archives
 
-1. 🍰可自定义首页顶部的图片
-2. 🍰可以自定义首页文字
-3. 🍰可自定义颜色（待修改）
+# 自定义颜色
+color:
+  bg: "#2E343B"          #背景颜色
+  bg_dark: "#272c32"     #较黑的背景色
+  bg_light: "#353c44"    #较亮的背景色
+  # 以上三个颜色均可在 https://neumorphism.io/#55b9f3 获取，背景色的自己定的，在输入框输入自己定的颜色后，box-shadow 出现的第一行就是较暗的背景色，第二行的就是较亮的背景色
+  normal_text: "#F9FBFC" #普通文字的颜色
+  highlight: "#A22323"   # 高亮
 
-### 2020/4/24
+# 网站个性化
+icon_img: ../img/icon.png  #标签页图标
+site_author: 任我行         #网站作者
+site_name: 任我行的小站     #网站名字
 
-1. 🍖首页展示的文章可自动截断
-2. 🍖美化了widget的样式
+# Valine 评论系统
+valine:
+  open: true # true | false 是否打开
+  appid: HBismw2vU6hg56PslAF2APW1-gzGzoHsz  #Leancloud应用的AppID
+  appkey: k41e2BJYdNbojyHuMnKT5LBK  #Leancloud应用的AppKey
+  verify: false #验证码
+  notify: true #评论回复提醒
+  avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+  #头像类型可见： https://valine.js.org/avatar.html
+  placeholder: 留下你来过的痕迹~ #评论框占位符
 
-### 2020/4/27
-1. 🍖美化了文章标题的样式
-2. 🍰加入了可折叠区域
-3. 🍖美化了分割线的样式
-
-
-### 2020/4/29
-1. 🎉大改了全部样式，换成了淡雅 拟态风格的样式🎉
-
-### 2020/05/01
-1. 删掉了一些不必要的东西
+```
 
 ## 👋联系我
 
 如果你有什么好的意见或建议的话，欢迎你和我交流！
 
 - 邮箱：1563250958@qq.com
+- QQ： 1563250958
 
-<br>
-<p align="center">
----------如果你喜欢本项目，那不妨给我一个star🌟,就是对我莫大的鼓励了😊 ---------
-</p>
+## 🏊‍♂️其他
+- [更新日志](https://github.com/FuShaoLei/hexo-theme-hiya/issues/3)
+- [TODO](https://github.com/FuShaoLei/hexo-theme-hiya/issues/2)
