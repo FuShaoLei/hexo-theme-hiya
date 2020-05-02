@@ -5,11 +5,11 @@ menu:
 
 # 自定义颜色
 color:
-  bg: "#2E343B"
-  bg_dark: "#272c32"
-  bg_light: "#353c44"
-  normal_text: "#F9FBFC"
-  highlight: "#A22323"
+  bg: "#026A39"
+  bg_dark: "#025a30"
+  bg_light: "#027a42"
+  normal_text: "#F0F2E5"
+  highlight: "#F7BD08"
 
 # 网站个性化
 icon_img: ../img/icon.png #标签页图标

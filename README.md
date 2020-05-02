@@ -1,10 +1,10 @@
 <p align="center">
- <span style="font-size:1.9em;display:block;">Hiya</span>
+<img height="48" src="source/img/logo.png">
  <br>
 一款极简的，拟态风格的，基于landscape改造的Hexo主题
 </p>
 
-![](source/img/example.png)
+![](source/img/preview.png)
 
 ## 🍚Demo
 - 国内访问：[任我行的小站gitee](https://fushaolei.gitee.io/)
@@ -71,3 +71,4 @@ valine:
 ## 🏊‍♂️其他
 - [更新日志](https://github.com/FuShaoLei/hexo-theme-hiya/issues/3)
 - [TODO](https://github.com/FuShaoLei/hexo-theme-hiya/issues/2)
+
