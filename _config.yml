@@ -5,11 +5,11 @@ menu:
 
 # 自定义颜色
 color:
-  bg: "#026A39"
-  bg_dark: "#025a30"
-  bg_light: "#027a42"
-  normal_text: "#F0F2E5"
-  highlight: "#F7BD08"
+  bg: "#1653A6"
+  bg_dark: "#13478d"
+  bg_light: "#195fbf"
+  normal_text: "#F0F0F0"
+  highlight: "#E3C36F"
 
 # 网站个性化
 icon_img: ../img/icon.png #标签页图标
@@ -27,4 +27,7 @@ valine:
   #头像类型可见： https://valine.js.org/avatar.html
   placeholder: 留下你来过的痕迹~ #评论框占位符
 
+# 不蒜子统计
+busuanzi:
+  open: true # true | false 是否打开，默认false
 
