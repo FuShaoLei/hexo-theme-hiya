@@ -1,0 +1,23 @@
+<div class="widget-wrap">
+    <div class="widget-wrap-info">
+        <img src="<%= url_for(theme.avator_img) %>" class="widget-wrap-info-img">
+        <div class="widget-wrap-info-author"><%= theme.site_author %></div>
+        <div class="widget-wrap-info-signature"><%= theme.signature %></div>
+    </div>
+    <div class="info-nav">
+        <ul class="info-nav-ul">
+        <% for (var i in theme.menu){ %>
+            <li class="info-nav-li">
+            <a class="info-nav-link" href="<%- url_for(theme.menu[i][0]) %>">
+                <div class="info-nav-div">
+                    <span class="info-nav-icon">
+                        <i data-feather="<% if (theme.menu[i][1]){ %><%= theme.menu[i][1] %><%} else{ %><%= 'hexagon' %><% } %>"></i>
+                    </span>
+                    <span class="info-nav-name"><%= i %></span>
+                </div>
+            </a>
+           </li>
+          <% } %>
+        </ul>
+    </div>
+</div>

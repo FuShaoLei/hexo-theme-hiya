@@ -6,15 +6,16 @@
   margin: block-margin 0
   padding: 15px
   border-radius: 10px
-  background: #efeeee
-  box-shadow: 5px 5px 10px #d0cfcf, 
-             -5px -5px 10px #ffffff
+  background: color-neu-bg
+  box-shadow: inset 5px 5px 10px color-neu-bg-dark, 
+              inset -5px -5px 10px color-neu-bg-light
 
 .widget-title
    text-decoration: none
+   color: color-neu-normal-text
    text-transform: uppercase
    letter-spacing: 1px
-   border-left: 4px solid color-neu-bg
+   border-left: 4px solid color-neu-highlight
    margin-bottom: 1em
    margin-left: 5px
    padding-left: 5px
@@ -22,7 +23,6 @@
 
 .widget
   color: color-neu-normal-text
-  text-shadow: 0 1px #fff
   a
     color: color-neu-highlight
     text-decoration: none
@@ -32,3 +32,48 @@
     ul, ol, dl
       margin-left: 15px
       list-style: disc
+
+.widget-wrap-info
+  text-align: center
+  .widget-wrap-info-img
+    height: 100px
+    width: 100px
+    border-radius:100px
+    @extend $block
+  .widget-wrap-info-author
+    color: color-neu-normal-text
+    font-weight: bold
+  .widget-wrap-info-signature
+    color: color-neu-normal-text
+    opacity: 0.8
+
+
+.info-nav
+  margin-top: 10px
+
+.info-nav-li
+  .info-nav-link
+    color: color-neu-normal-text
+    text-decoration: none
+    .info-nav-div
+      position: relative
+      display: block
+      height: 40px
+      background: color-neu-bg-light
+      transition: 0.3s
+      line-height: 40px
+      &:hover
+        background: color-neu-bg-dark
+    .info-nav-icon
+      width: 40px
+      margin-top: 7px
+      text-align: center
+      position: relative
+      float: left
+      line-height: 24px
+
+        
+        
+
+
+

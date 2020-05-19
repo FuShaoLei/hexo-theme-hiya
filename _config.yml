@@ -1,7 +1,17 @@
-# Header
+# 导航栏以及图标 图标网址：https://feathericons.com/
 menu:
-  Home: /
-  Archives: /archives
+  首页: 
+    - /
+    - home
+  归档: 
+    - /archives
+    - archive
+  关于:
+    - /about
+    - alert-circle
+  留言:
+    - /board
+    - edit-3
 
 # 自定义颜色
 color:
@@ -11,10 +21,17 @@ color:
   normal_text: "#F0F0F0"
   highlight: "#E3C36F"
 
+# Sidebar
+sidebar: left
+widgets:
+- info
+
 # 网站个性化
 icon_img: ../img/icon.png #标签页图标
-site_author: 任我行
-site_name: 任我行的小站
+site_author: 向来痴
+signature: 业精于勤，荒于嬉。  #个性签名
+site_name: 无名BLOG
+avator_img: ../img/avator.jpg #头像
 
 # Valine 评论系统
 valine:
