@@ -6,6 +6,8 @@
 
 ![](source/img/preview.png)
 
+## 🚧 已停止维护 🤣
+
 ## 🍚Demo
 - 国内访问：[任我行的小站gitee](https://fushaolei.gitee.io/)
 - 国外访问：[任我行的小站github](https://fushaolei.github.io/)
